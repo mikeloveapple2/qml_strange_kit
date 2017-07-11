@@ -63,5 +63,12 @@ Popup {
                 }
             }
         } // txt_frame
+    } // main
+    enter:Transition {
+        NumberAnimation { properties: "scale"; easing.type: Easing.InOutQuad; from : 0.3 ; to : 1 }
+    }
+
+    exit :Transition {
+        NumberAnimation { properties: "opacity"; easing.type: Easing.InOutQuad; from : 1 ; to : 0.3 }
     }
 }
